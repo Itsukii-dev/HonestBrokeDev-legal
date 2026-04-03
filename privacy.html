@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Honest Broke Dev</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #fff7ed;
+      color: #2d3561;
+      padding: 48px 20px;
+      line-height: 1.7;
+    }
+    .wrap { max-width: 680px; margin: 0 auto; }
+    .back {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: #7f8ab0;
+      text-decoration: none;
+      margin-bottom: 32px;
+      letter-spacing: 1px;
+    }
+    .back:hover { color: #2d3561; }
+    .label {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #a0aacf;
+      margin-bottom: 8px;
+    }
+    h1 { font-size: 30px; font-weight: 900; margin-bottom: 6px; }
+    .date { font-size: 12px; color: #a0aacf; margin-bottom: 40px; }
+    h2 {
+      font-size: 16px;
+      font-weight: 800;
+      color: #2d3561;
+      margin-top: 36px;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1.5px solid #e8ecf8;
+    }
+    p { font-size: 14px; color: #4a5280; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { font-size: 14px; color: #4a5280; margin-bottom: 6px; }
+    .chip {
+      display: inline-block;
+      background: #f0f4ff;
+      border: 1px solid #e8ecf8;
+      border-radius: 8px;
+      padding: 3px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #6c63ff;
+      margin-bottom: 4px;
+    }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin: 16px 0;
+    }
+    .table th {
+      text-align: left;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #a0aacf;
+      padding: 8px 12px;
+      background: #f0f4ff;
+    }
+    .table td { padding: 10px 12px; border-bottom: 1px solid #e8ecf8; color: #4a5280; vertical-align: top; }
+    .table tr:last-child td { border-bottom: none; }
+    a { color: #6c63ff; }
+    .footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid #e8ecf8; font-size: 12px; color: #a0aacf; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="index.html">← torna all'indice</a>
+
+    <p class="label">informativa sulla privacy</p>
+    <h1>Privacy Policy</h1>
+    <p class="date">Ultimo aggiornamento: aprile 2025 · Versione app: 1.0.0</p>
+
+    <h2>1. Titolare del trattamento</h2>
+    <p>
+      Il titolare del trattamento dei dati è <strong>Emanuele Pina</strong>, sviluppatore indipendente.<br>
+      Contatto: <a href="mailto:itsukii-dev@outlook.it">itsukii-dev@outlook.it</a>
+    </p>
+
+    <h2>2. Cosa raccogliamo e perché</h2>
+    <p>L'app raccoglie un numero minimo di dati, tutti necessari al funzionamento:</p>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Dato</th>
+          <th>Come viene generato</th>
+          <th>Dove viene conservato</th>
+          <th>Scopo</th>
+          <th>Visibile ad altri utenti?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Nickname</strong></td>
+          <td>Inserito dall'utente al primo avvio</td>
+          <td>Supabase (EU) + dispositivo locale</td>
+          <td>Personalizzazione e contatore pubblico dei download</td>
+          <td>Sì — appare nel ticker live dell'app</td>
+        </tr>
+        <tr>
+          <td><strong>Device ID</strong></td>
+          <td>UUID generato casualmente dall'app al primo avvio, non collegato all'Apple ID né all'hardware</td>
+          <td>Supabase (EU) + dispositivo locale (AsyncStorage)</td>
+          <td>Evitare il conteggio di download duplicati</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td><strong>Push Token</strong></td>
+          <td>Fornito dal sistema Expo/APNS solo se l'utente concede il permesso</td>
+          <td>Supabase (EU)</td>
+          <td>Inviare notifiche sui traguardi di download (milestone)</td>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Non raccogliamo</strong>: posizione geografica, dati sanitari, dati finanziari, contatti, cronologia di navigazione, dati biometrici, IDFA o qualsiasi identificatore pubblicitario.</p>
+
+    <h2>3. Nickname pubblico — avviso importante</h2>
+    <p>
+      Il nickname inserito al primo avvio <strong>viene mostrato pubblicamente</strong> nel ticker live visibile a tutti gli utenti dell'app, insieme al numero progressivo di download. Non inserire dati personali reali (nome completo, email, ecc.) come nickname.
+    </p>
+
+    <h2>4. Base giuridica del trattamento</h2>
+    <p>Il trattamento si basa su:</p>
+    <ul>
+      <li><strong>Esecuzione del contratto</strong> (Art. 6.1.b GDPR): il nickname e il Device ID sono necessari per fornire il servizio (assegnare un numero progressivo univoco).</li>
+      <li><strong>Consenso</strong> (Art. 6.1.a GDPR): il push token viene raccolto solo dopo esplicita autorizzazione dell'utente tramite il sistema di permessi iOS.</li>
+    </ul>
+
+    <h2>5. Conservazione dei dati</h2>
+    <p>
+      I dati vengono conservati per tutta la durata dell'app. In caso di chiusura del servizio, i dati verranno eliminati entro 30 giorni. Su richiesta, i dati relativi a uno specifico Device ID possono essere cancellati prima.
+    </p>
+
+    <h2>6. Condivisione con terze parti</h2>
+    <p>I dati non vengono venduti né ceduti a scopo pubblicitario. Vengono condivisi solo con:</p>
+    <ul>
+      <li><strong>Supabase Inc.</strong> — infrastruttura database, server nella regione EU. <a href="https://supabase.com/privacy" target="_blank">Privacy Policy Supabase</a></li>
+      <li><strong>Expo / Expo Push API</strong> — sistema di notifiche push. I push token vengono trasmessi ai server Expo per la consegna delle notifiche. <a href="https://expo.dev/privacy" target="_blank">Privacy Policy Expo</a></li>
+    </ul>
+    <p>Il link a BuyMeACoffee presente nell'app apre un sito esterno: Honest Broke Dev non trasmette nessun dato a BuyMeACoffee.</p>
+
+    <h2>7. Trasferimento internazionale</h2>
+    <p>Supabase e Expo sono soggetti al GDPR e operano in conformità con le normative europee sulla protezione dei dati. I dati vengono archiviati su server nell'Unione Europea (Supabase EU region).</p>
+
+    <h2>8. I tuoi diritti (GDPR)</h2>
+    <p>In qualità di interessato, hai il diritto di:</p>
+    <ul>
+      <li>Accedere ai dati che ti riguardano</li>
+      <li>Richiedere la rettifica di dati inesatti</li>
+      <li>Richiedere la cancellazione dei tuoi dati (<em>diritto all'oblio</em>)</li>
+      <li>Opporti al trattamento</li>
+      <li>Revocare il consenso in qualsiasi momento (es. revocando i permessi notifiche in Impostazioni iOS)</li>
+    </ul>
+    <p>Per esercitare questi diritti, scrivi a <a href="mailto:itsukii-dev@ou">itsukii-dev@outlook.it</a> indicando il tuo nickname e/o Device ID (visibile nelle impostazioni del dispositivo tramite AsyncStorage). Risponderemo entro 30 giorni.</p>
+
+    <h2>9. Sicurezza</h2>
+    <p>
+      I dati sono conservati su Supabase con Row Level Security (RLS) abilitata. Il Device ID non è collegato ad alcun identificatore hardware o all'Apple ID. Le connessioni tra l'app e il server avvengono esclusivamente tramite HTTPS/TLS.
+    </p>
+
+    <h2>10. Minori</h2>
+    <p>L'app è classificata 4+ e non richiede registrazione. Non è progettata per raccogliere intenzionalmente dati di minori di 13 anni. Se sei un genitore e ritieni che tuo figlio abbia fornito dati personali, contattaci per la cancellazione immediata.</p>
+
+    <h2>11. Modifiche a questa informativa</h2>
+    <p>
+      Eventuali modifiche verranno pubblicate su questa pagina con data di aggiornamento. Per modifiche sostanziali, gli utenti attivi potranno essere notificati tramite le notifiche push (se il permesso è stato concesso).
+    </p>
+
+    <div class="footer">
+      Honest Broke Dev · com.honestbrokedev.app · Emanuele Pina · <a href="mailto:itsukii-dev@outlook.it">itsukii-dev@outlook.it</a>
+    </div>
+  </div>
+</body>
+</html>
